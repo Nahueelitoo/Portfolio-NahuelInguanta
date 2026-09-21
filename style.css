@@ -61,34 +61,20 @@ footer { padding: 30px 8%; border-top: 1px solid #292929; opacity: 0.5; }
 
 .project-card {
     position: relative;
-    height: 320px;
-    overflow: hidden;
-    transition: transform 380ms cubic-bezier(.2, .75, .25, 1), background-color 380ms ease;
+    overflow: visible;
+    transition: transform 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
 }
 
-.project-card:nth-child(3n + 1):hover {
-    transform: scaleX(2.1);
-    transform-origin: left center;
-    z-index: 1;
-}
-
-.project-card:nth-child(3n + 2):hover {
-    transform: scaleX(1.7);
-    transform-origin: center;
-    z-index: 1;
-}
-
-.project-card:nth-child(3n):hover {
-    transform: scaleX(2.1);
-    transform-origin: right center;
+.project-card:hover {
+    transform: scale(1.025);
+    border-color: #ffffff;
+    box-shadow: 0 0 0 1px #ffffff, 0 0 22px rgba(255, 255, 255, .35);
     z-index: 1;
 }
 
 .project-image {
-    position: absolute;
-    inset: 0;
-    height: auto;
-    transition: opacity 250ms ease;
+    position: relative;
+    height: 300px;
 }
 
 .project-image img {
@@ -99,18 +85,12 @@ footer { padding: 30px 8%; border-top: 1px solid #292929; opacity: 0.5; }
 
 .project-info {
     position: relative;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    opacity: 0;
-    transform: translateY(16px);
-    transition: opacity 220ms ease 80ms, transform 300ms ease 80ms;
+    height: auto;
+    display: block;
+    opacity: 1;
+    transform: none;
+    transition: none;
 }
-
-.project-card:hover { background: #111111; }
-.project-card:hover .project-image { opacity: .2; }
-.project-card:hover .project-info { opacity: 1; transform: translateY(0); }
 
 @media (max-width: 760px) {
     .hero { grid-template-columns: 1fr; }
@@ -120,5 +100,4 @@ footer { padding: 30px 8%; border-top: 1px solid #292929; opacity: 0.5; }
 
 @media (max-width: 520px) {
     .projects-grid { grid-template-columns: 1fr; }
-    .project-card:hover { transform: none; }
 }
