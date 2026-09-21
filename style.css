@@ -4,131 +4,121 @@
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
+body { font-family: Arial, sans-serif; background: #0a0a0a; color: #ffffff; }
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+section { padding: 100px 8%; }
+nav { padding: 25px 8%; display: flex; justify-content: space-between; align-items: center; }
+.logo { font-weight: bold; }
+.nav-links { display: flex; gap: 30px; }
+.hero-content { max-width: 900px; padding: 100px 0; }
+.eyebrow { text-transform: uppercase; letter-spacing: 0.15em; font-size: 12px; margin-bottom: 20px; opacity: 0.6; }
+h1 { font-size: clamp(50px, 8vw, 100px); line-height: 0.95; margin-bottom: 30px; }
+h2 { font-size: 50px; margin-bottom: 30px; }
+.hero-description { max-width: 600px; font-size: 20px; line-height: 1.6; opacity: 0.7; }
+.projects-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px; margin-top: 50px; }
+.project-card { border: 1px solid #292929; background: #111111; }
+.project-image { height: 300px; display: flex; align-items: flex-end; padding: 25px; background: #202020; font-size: 25px; font-weight: bold; }
+.project-info { padding: 25px; }
+.project-category { font-size: 12px; opacity: 0.5; margin-bottom: 10px; }
+.project-info h3 { font-size: 24px; margin-bottom: 10px; }
+.project-info p { opacity: 0.6; }
+#about { max-width: 1000px; }
+#lunasoft { background: #111111; }
+#contact { min-height: 500px; }
+footer { padding: 30px 8%; border-top: 1px solid #292929; opacity: 0.5; }
 
-body {
-    font-family: Arial, sans-serif;
-    background: #0a0a0a;
-    color: #ffffff;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-ul {
-    list-style: none;
-}
-
-section {
-    padding: 100px 8%;
-}
-
-nav {
-    padding: 25px 8%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    font-weight: bold;
-}
-
-.nav-links {
-    display: flex;
-    gap: 30px;
+/* Distribución: se mantiene la estética original y solo cambia el tamaño/orden de los bloques. */
+.hero {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(220px, 1fr);
+    gap: 25px;
+    align-items: stretch;
+    padding-top: 45px;
+    padding-bottom: 70px;
 }
 
 .hero-content {
-    max-width: 900px;
-    padding: 100px 0;
+    max-width: none;
+    padding: 45px 0;
 }
 
-.eyebrow {
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-    font-size: 12px;
-    margin-bottom: 20px;
-    opacity: 0.6;
-}
+.hero h1 { font-size: clamp(46px, 5.5vw, 78px); }
+.hero .hero-description { font-size: 17px; }
 
-h1 {
-    font-size: clamp(50px, 8vw, 100px);
-    line-height: 0.95;
-    margin-bottom: 30px;
-}
-
-h2 {
-    font-size: 50px;
-    margin-bottom: 30px;
-}
-
-.hero-description {
-    max-width: 600px;
-    font-size: 20px;
-    line-height: 1.6;
-    opacity: 0.7;
+.hero-photo {
+    min-height: 360px;
+    background: #202020;
+    border: 1px solid #292929;
 }
 
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 25px;
-    margin-top: 50px;
+    overflow: visible;
 }
 
 .project-card {
-    border: 1px solid #292929;
-    background: #111111;
+    position: relative;
+    height: 320px;
+    overflow: hidden;
+    transition: transform 380ms cubic-bezier(.2, .75, .25, 1), background-color 380ms ease;
+}
+
+.project-card:nth-child(3n + 1):hover {
+    transform: scaleX(2.1);
+    transform-origin: left center;
+    z-index: 1;
+}
+
+.project-card:nth-child(3n + 2):hover {
+    transform: scaleX(1.7);
+    transform-origin: center;
+    z-index: 1;
+}
+
+.project-card:nth-child(3n):hover {
+    transform: scaleX(2.1);
+    transform-origin: right center;
+    z-index: 1;
 }
 
 .project-image {
-    height: 300px;
-    display: flex;
-    align-items: flex-end;
-    padding: 25px;
-    background: #202020;
-    font-size: 25px;
-    font-weight: bold;
+    position: absolute;
+    inset: 0;
+    height: auto;
+    transition: opacity 250ms ease;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .project-info {
-    padding: 25px;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 220ms ease 80ms, transform 300ms ease 80ms;
 }
 
-.project-category {
-    font-size: 12px;
-    opacity: 0.5;
-    margin-bottom: 10px;
+.project-card:hover { background: #111111; }
+.project-card:hover .project-image { opacity: .2; }
+.project-card:hover .project-info { opacity: 1; transform: translateY(0); }
+
+@media (max-width: 760px) {
+    .hero { grid-template-columns: 1fr; }
+    .hero-photo { min-height: 280px; }
+    .projects-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
-.project-info h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.project-info p {
-    opacity: 0.6;
-}
-
-#about {
-    max-width: 1000px;
-}
-
-#lunasoft {
-    background: #111111;
-}
-
-#contact {
-    min-height: 500px;
-}
-
-footer {
-    padding: 30px 8%;
-    border-top: 1px solid #292929;
-    opacity: 0.5;
+@media (max-width: 520px) {
+    .projects-grid { grid-template-columns: 1fr; }
+    .project-card:hover { transform: none; }
 }

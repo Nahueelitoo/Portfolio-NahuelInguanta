@@ -1,240 +1,402 @@
+```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Nahuel — Developer · Project Lead · Founder</title>
+    <title>Nahuel Inguanta — Developer · Project Lead · Founder</title>
 
-    <meta 
-        name="description" 
-        content="Portfolio of Nahuel — Software Developer, Project Lead and Founder."
-    >
-
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
 
-    <header>
-        <nav>
-            <a href="/" class="logo">
-                NAHUEL.
-            </a>
+    <!-- =========================
+         NAVBAR
+    ========================== -->
 
-            <ul class="nav-links">
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#lunasoft">Lunasoft</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <header>
+
+        <nav>
+
+            <div class="logo">
+                NAHUEL.
+            </div>
+
+            <div class="nav-links">
+
+                <a href="#projects"
+                   data-es="Proyectos"
+                   data-en="Projects">
+                    Proyectos
+                </a>
+
+                <a href="#about"
+                   data-es="Sobre mí"
+                   data-en="About">
+                    Sobre mí
+                </a>
+
+                <a href="#lunasoft"
+                   data-es="Lunasoft"
+                   data-en="Lunasoft">
+                    Lunasoft
+                </a>
+
+                <a href="#contact"
+                   data-es="Contacto"
+                   data-en="Contact">
+                    Contacto
+                </a>
+
+            </div>
+
+
+            <!-- SELECTOR DE IDIOMA -->
+
+            <div class="language-switch">
+
+                <button id="lang-es">
+                    ES
+                </button>
+
+                <span>/</span>
+
+                <button id="lang-en">
+                    EN
+                </button>
+
+            </div>
+
         </nav>
+
     </header>
 
 
+    <!-- =========================
+         HERO
+    ========================== -->
+
     <main>
 
-        <!-- HERO -->
-        <section id="hero">
+        <section class="hero">
 
             <div class="hero-content">
 
-                <p class="eyebrow">
-                    Developer · Project Lead · Founder
-                </p>
+            <p class="hero-role"
+               data-es="Desarrollador · Project Lead · Founder"
+               data-en="Developer · Project Lead · Founder">
+                Desarrollador · Project Lead · Founder
+            </p>
 
-                <h1>
-                    I build things
-                    <br>
-                    from idea to reality.
-                </h1>
 
-                <p class="hero-description">
-                    Software developer focused on building digital products,
-                    videogames and ambitious projects.
-                </p>
+            <h1
+                data-es="Desarrollo ideas y las convierto en realidad."
+                data-en="I turn ideas into reality.">
+                Desarrollo ideas
+                <br>
+                y las convierto en realidad.
+            </h1>
+
+
+            <p class="hero-description"
+               data-es="Creo historias únicas para videojuegos y proyectos digitales desde la idea inicial hasta su desarrollo."
+               data-en="I create unique stories for video games and digital projects from the initial idea to development.">
+                Creo historias únicas para videojuegos y proyectos digitales desde la idea inicial hasta su desarrollo.
+            </p>
+            <br>
+
+            <a href="#projects"
+               class="hero-button"
+               data-es="Ver proyectos"
+               data-en="View projects">
+                Ver proyectos
+            </a>
 
             </div>
+
+            <!-- Cuando tengas tu foto, reemplazá este div por: <img src="assets/images/nahuel.jpg" alt="Nahuel Inguanta"> -->
+            <div class="hero-photo" aria-label="Espacio reservado para tu fotografía"></div>
 
         </section>
 
 
-        <!-- PROJECTS -->
-        <section id="projects">
+        <!-- =========================
+             PROJECTS
+        ========================== -->
+
+        <section id="projects" class="projects">
+
+    <div class="section-header">
+
+        <p
+            data-es="01 — PROYECTOS"
+            data-en="01 — PROJECTS">
+            01 — PROYECTOS
+        </p>
+
+        <h2
+            data-es="Proyectos seleccionados"
+            data-en="Selected projects">
+            Proyectos seleccionados
+        </h2>
+
+    </div>
+
+
+    <div class="projects-grid">
+
+        <!-- WHISPERING CLAWS -->
+
+        <a href="projects/whispering-claws.html" class="project-card">
+
+            <div class="project-image">
+                <img
+                    src="assets/images/whispering-claws.jpg"
+                    alt="Whispering Claws">
+            </div>
+
+            <div class="project-info">
+
+                <span
+                    data-es="Videojuego · Horror"
+                    data-en="Video game · Horror">
+                    Videojuego · Horror
+                </span>
+
+                <h3>
+                    Whispering Claws
+                </h3>
+
+                <p
+                    data-es="Videojuego de horror en primera persona desarrollado en Unity."
+                    data-en="First-person horror game developed in Unity.">
+                    Videojuego de horror en primera persona desarrollado en Unity.
+                </p>
+
+                <span class="project-link"
+                    data-es="Ver proyecto →"
+                    data-en="View project →">
+                    Ver proyecto →
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <!-- BARSSATY -->
+
+        <a href="projects/barssaty.html" class="project-card">
+
+            <div class="project-image">
+                <img
+                    src="assets/images/barssaty.jpg"
+                    alt="Barssaty">
+            </div>
+
+            <div class="project-info">
+
+                <span
+                    data-es="Desarrollo web"
+                    data-en="Web development">
+                    Desarrollo web
+                </span>
+
+                <h3>
+                    Barssaty
+                </h3>
+
+                <p
+                    data-es="Sitio web para un emprendimiento de pastelería."
+                    data-en="Website for a pastry business.">
+                    Sitio web para un emprendimiento de pastelería.
+                </p>
+
+                <span class="project-link"
+                    data-es="Ver proyecto →"
+                    data-en="View project →">
+                    Ver proyecto →
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <!-- CALENDAR -->
+
+        <a href="projects/calendar.html" class="project-card">
+
+            <div class="project-image">
+                <img
+                    src="assets/images/calendar.jpg"
+                    alt="Calendar">
+            </div>
+
+            <div class="project-info">
+
+                <span
+                    data-es="Software · Aplicación"
+                    data-en="Software · Application">
+                    Software · Aplicación
+                </span>
+
+                <h3>
+                    Calendar
+                </h3>
+
+                <p
+                    data-es="Aplicación para organizar eventos y fechas."
+                    data-en="Application for organizing events and dates.">
+                    Aplicación para organizar eventos y fechas.
+                </p>
+
+                <span class="project-link"
+                    data-es="Ver proyecto →"
+                    data-en="View project →">
+                    Ver proyecto →
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <!-- 2D GAME -->
+
+        <a href="projects/2d-game.html" class="project-card">
+
+            <div class="project-image">
+                <img
+                    src="assets/images/2d-game.jpg"
+                    alt="2D Game">
+            </div>
+
+            <div class="project-info">
+
+                <span
+                    data-es="Videojuego · 2D"
+                    data-en="Video game · 2D">
+                    Videojuego · 2D
+                </span>
+
+                <h3>
+                    2D Game
+                </h3>
+
+                <p
+                    data-es="Videojuego 2D desarrollado como proyecto personal."
+                    data-en="2D video game developed as a personal project.">
+                    Videojuego 2D desarrollado como proyecto personal.
+                </p>
+
+                <span class="project-link"
+                    data-es="Ver proyecto →"
+                    data-en="View project →">
+                    Ver proyecto →
+                </span>
+
+            </div>
+
+        </a>
+
+
+    </div>
+
+</section>
+
+
+        <!-- =========================
+             SKILLS
+        ========================== -->
+
+        <section class="skills">
 
             <div class="section-header">
-                <p class="eyebrow">Selected work</p>
 
-                <h2>
-                    Projects
+                <p
+                    data-es="04 — HABILIDADES"
+                    data-en="04 — SKILLS">
+                    04 — HABILIDADES
+                </p>
+
+                <h2
+                    data-es="Tecnologías y áreas"
+                    data-en="Technologies and areas">
+                    Tecnologías y áreas
                 </h2>
+
             </div>
 
 
-            <div class="projects-grid">
+            <div class="skills-list">
 
-                <!-- Whispering Claws -->
-                <article class="project-card">
+                <span>Unity</span>
+                <span>C#</span>
+                <span>HTML / CSS / JavaScript</span>
+                <span>SQL</span>
+                <span>Git</span>
+                <span
+                    data-es="Desarrollo de videojuegos"
+                    data-en="Game development">
+                    Desarrollo de videojuegos
+                </span>
 
-                    <div class="project-image">
-                        <span>WHISPERING CLAWS</span>
-                    </div>
+                <span
+                    data-es="Desarrollo de software"
+                    data-en="Software development">
+                    Desarrollo de software
+                </span>
 
-                    <div class="project-info">
-
-                        <p class="project-category">
-                            Video Game · Unity
-                        </p>
-
-                        <h3>
-                            Whispering Claws
-                        </h3>
-
-                        <p>
-                            Survival horror game currently in development.
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <!-- Barssaty -->
-                <article class="project-card">
-
-                    <div class="project-image">
-                        <span>BARSSATY</span>
-                    </div>
-
-                    <div class="project-info">
-
-                        <p class="project-category">
-                            Web · E-commerce
-                        </p>
-
-                        <h3>
-                            Barssaty
-                        </h3>
-
-                        <p>
-                            Digital presence and online experience for a
-                            pastry business.
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <!-- Calendar -->
-                <article class="project-card">
-
-                    <div class="project-image">
-                        <span>CALENDAR</span>
-                    </div>
-
-                    <div class="project-info">
-
-                        <p class="project-category">
-                            Software · Personal Project
-                        </p>
-
-                        <h3>
-                            Calendar
-                        </h3>
-
-                        <p>
-                            Personal software project focused on organization
-                            and usability.
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <!-- 2D Game -->
-                <article class="project-card">
-
-                    <div class="project-image">
-                        <span>2D GAME</span>
-                    </div>
-
-                    <div class="project-info">
-
-                        <p class="project-category">
-                            Game Development
-                        </p>
-
-                        <h3>
-                            2D Game
-                        </h3>
-
-                        <p>
-                            An earlier game development project.
-                        </p>
-
-                    </div>
-
-                </article>
+                <span
+                    data-es="Gestión de proyectos"
+                    data-en="Project management">
+                    Gestión de proyectos
+                </span>
 
             </div>
 
         </section>
 
 
-        <!-- ABOUT -->
-        <section id="about">
+        <!-- =========================
+             CONTACT
+        ========================== -->
 
-            <p class="eyebrow">
-                About me
+        <section id="contact" class="contact">
+
+            <div class="section-header">
+
+                <p
+                    data-es="05 — CONTACTO"
+                    data-en="05 — CONTACT">
+                    05 — CONTACTO
+                </p>
+
+                <h2
+                    data-es="¿Trabajamos juntos?"
+                    data-en="Let's build something together.">
+                    ¿Trabajamos juntos?
+                </h2>
+
+            </div>
+
+
+            <p
+                data-es="Si querés hablar sobre un proyecto, una colaboración o simplemente conocer mi trabajo, podés contactarme."
+                data-en="If you'd like to talk about a project, a collaboration, or simply learn more about my work, feel free to contact me.">
+                Si querés hablar sobre un proyecto, una colaboración
+                o simplemente conocer mi trabajo, podés contactarme.
             </p>
 
-            <h2>
-                Developer with a
-                <br>
-                product mindset.
-            </h2>
 
-            <p>
-                I work across software development, databases, game
-                development and project organization.
-            </p>
-
-        </section>
-
-
-        <!-- LUNASOFT -->
-        <section id="lunasoft">
-
-            <p class="eyebrow">
-                Founder project
-            </p>
-
-            <h2>
-                Lunasoft Studios
-            </h2>
-
-            <p>
-                A studio focused on videogames, software and technology.
-            </p>
-
-        </section>
-
-
-        <!-- CONTACT -->
-        <section id="contact">
-
-            <p class="eyebrow">
-                Contact
-            </p>
-
-            <h2>
-                Let's build something.
-            </h2>
-
-            <a href="mailto:TU_EMAIL">
-                Get in touch →
+            <a href="mailto:tuemail@email.com"
+               data-es="Contactarme →"
+               data-en="Get in touch →">
+                Contactarme →
             </a>
 
         </section>
@@ -242,16 +404,30 @@
     </main>
 
 
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
     <footer>
 
         <p>
-            © 2026 Nahuel
+            © 2026 Nahuel Inguanta
+        </p>
+
+        <p
+            data-es="Diseñado y desarrollado por Nahuel."
+            data-en="Designed and developed by Nahuel.">
+            Diseñado y desarrollado por Nahuel.
         </p>
 
     </footer>
 
 
-    <script src="js/main.js"></script>
+    <!-- JAVASCRIPT -->
+
+    <script src="/main.js"></script>
 
 </body>
+
 </html>
+```
