@@ -1,0 +1,27 @@
+PROJECTS - SIRVE PARA COLOCAR LOS PROYECTOS ACTUALES, LOS QUE TENGO EN MARCHA Y LOS QUE VOY A IR HACIENDO CON EL TIEMPO.
+- Voy a mostrar título del proyecto, que tipo de proyecto es (juego, aplicacion, desarrollo web, etc)
+- Imagen principal del proyecto.
+- Pequeña descripción.
+- Al clickear sobre el proyecto, debe abrir una vista parcial con algunas imágenes del desarrollo o ejemplos del proyecto.
+- Debe haber un botón en alguna parte de esa vista parcial que lleve al detalle completo del proyecto.(Redirige a un nuevo HTML)
+- Si corresponde, incluir el repositorio de GitHub.
+
+LISTA DE PROYECTOS:
+
+WHISPERING CLAWS - IMPORTANTE MOSTRARLO (POSIBLE 2027 DEMO)
+
+LUNASOFT STUDIOS - CEO / PÁGINA APARTE / BRANDING EN MARCHA
+
+BARSSATY - BASE DE DATOS, PÁGINA WEB PARA COMPRAS Y PEDIDOS, VINCULADA CON WHATSAPP
+
+CALENDARIO BARSSATY - UN CALENDARIO CON LOGIN Y HOSTEADO EN UNA BASE EXTERNA PARA GUARDAR PEDIDOS Y EVENTOS IMPORTANTES. VISUALIZABLE EN CUALQUIER MOMENTO DESDE CUALQUIER DISPOSITIVO.
+
+SAVE A CAT / ANIMAL - IDEA DE DESARROLLO APLICACIÓN / RED SOCIAL PARA SALVAR ANIMALES EN LAS CALLES.
+
+2D GAME - UN JUEGO EN PROGRESO DE UN 2D - PRÁCTICA NO TERMINADA.
+
+EXPERIENCIA - Colocar experiencia profesional, tanto en programación como líder de grupo y de proyectos. Arranqué como CEO y programador de videojuegos en Octubre 2025. Programador hace 6 años, desde 2020. Graduado en licenciatura en sistemas.
+
+LUNASOFT STUDIOS - Una página aparte donde lleve a la página web de Lunasoft.
+
+CONTACTO - Mail para contactarse, LinkedIn profile para entrar y contactarme por ahí.
