@@ -144,7 +144,7 @@
 
         <!-- WHISPERING CLAWS -->
 
-        <a href="projects/whispering-claws.html" class="project-card">
+        <a href="projects/whispering-claws.html" class="project-card" data-title="Whispering Claws — (DEMO)" data-category-es="Videojuego · Horror" data-category-en="Video game · Horror" data-description-es="Videojuego de horror en primera persona desarrollado en Unity." data-description-en="First-person horror game developed in Unity." data-gallery="Images/Whispering_claws.jpg|Images/WhisperingClaws/Blocking_Exterior.png|Images/WhisperingClaws/Concept_Altar.png|Images/WhisperingClaws/Concept_Protagonista.jpeg|Images/WhisperingClaws/Environment_Onyx.png|Images/WhisperingClaws/Environment_Ruby.png|Images/WhisperingClaws/Environment1.png|Images/WhisperingClaws/Environment2.png" data-github="">
 
             <div class="project-image">
                 <img
@@ -186,7 +186,7 @@
 
         <!-- BARSSATY -->
 
-        <a href="projects/barssaty.html" class="project-card">
+        <a href="projects/barssaty.html" class="project-card" data-title="Barssaty" data-category-es="Desarrollo web" data-category-en="Web development" data-description-es="Sitio web para un emprendimiento de pastelería." data-description-en="Website for a pastry business." data-gallery="Images/Barssaty.jpeg" data-github="">
 
             <div class="project-image">
                 <img
@@ -229,7 +229,7 @@
 
         <!-- CALENDAR -->
 
-        <a href="projects/calendar.html" class="project-card">
+        <a href="projects/calendar.html" class="project-card" data-title="Calendar" data-category-es="Software · Aplicación" data-category-en="Software · Application" data-description-es="Aplicación para organizar eventos y fechas." data-description-en="Application for organizing events and dates." data-gallery="Images/Calendar.jpg" data-github="">
 
             <div class="project-image">
                 <img
@@ -271,7 +271,7 @@
 
         <!-- 2D GAME -->
 
-        <a href="projects/save-a-cat.html" class="project-card">
+        <a href="projects/save-a-cat.html" class="project-card" data-title="Save a Cat — (En desarrollo)" data-category-es="Aplicación · Mobile" data-category-en="Application · Mobile" data-description-es="Aplicación para rescatismo de animales en tiempo real. Funciona como red social para actuar y salvar animales." data-description-en="Real-time animal rescue application that works as a social network for taking action and saving animals." data-gallery="Images/Save_a_cat.jpg" data-github="">
 
             <div class="project-image">
                 <img
@@ -316,6 +316,23 @@
     </div>
 
 </section>
+
+<div class="project-lightbox" id="project-lightbox" aria-hidden="true">
+    <section class="lightbox-panel" role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
+        <button class="lightbox-close" type="button" aria-label="Cerrar">×</button>
+        <div class="lightbox-main-image" id="lightbox-image-view" title="Pasá el cursor para ampliar y arrastrá para explorar"><img id="lightbox-image" src="" alt=""></div>
+        <div class="lightbox-details">
+            <span class="lightbox-category" id="lightbox-category"></span>
+            <h2 id="lightbox-title"></h2>
+            <p id="lightbox-description"></p>
+            <div class="lightbox-gallery" id="lightbox-gallery" aria-label="Imágenes del proyecto"></div>
+            <div class="lightbox-actions">
+                <a class="lightbox-action github-action" id="lightbox-github" target="_blank" rel="noopener noreferrer" data-es="Ver en GitHub ↗" data-en="View on GitHub ↗">Ver en GitHub ↗</a>
+                <a class="lightbox-action detail-action" id="lightbox-detail" data-es="Ver proyecto completo →" data-en="View full project →">Ver proyecto completo →</a>
+            </div>
+        </div>
+    </section>
+</div>
 
 
         <!-- =========================
