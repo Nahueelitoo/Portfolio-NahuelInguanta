@@ -1,447 +1,795 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nahuel Inguanta - Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+            rel="stylesheet"
+        >
+        <link rel="stylesheet" href="/style.css">
+    </head>
 
-    <title>Nahuel Inguanta — Developer · Project Lead · Founder</title>
-
-    <link rel="stylesheet" href="/style.css">
-</head>
-
-<body id="top">
-
-    <!-- =========================
-         NAVBAR
-    ========================== -->
-
-    <header>
-
-        <nav>
-
-            <a class="logo" href="#top" aria-label="Volver al inicio">
-                NAHUEL INGUANTA
-            </a>
-
-            <div class="nav-links">
-
-                <a href="#projects"
-                   data-es="Proyectos"
-                   data-en="Projects">
-                    Proyectos
-                </a>
-
-                <a href="#about"
-                   data-es="Sobre mí"
-                   data-en="About me">
-                    Sobre mí
-                </a>
-
-                <a href="#lunasoft"
-                   data-es="Lunasoft"
-                   data-en="Lunasoft">
-                    Lunasoft
-                </a>
-
-                <a href="#contact"
-                   data-es="Contacto"
-                   data-en="Contact">
-                    Contacto
-                </a>
-
-            </div>
-
-
-            <!-- SELECTOR DE IDIOMA -->
-
-            <div class="language-switch">
-
-                <button id="lang-es">
-                    ES
-                </button>
-
-                <span>/</span>
-
-                <button id="lang-en">
-                    EN
-                </button>
-
-            </div>
-
-        </nav>
-
-    </header>
-
-
-    <!-- =========================
-         HERO
-    ========================== -->
-
-    <main>
-
-        <section class="hero">
-
-            <div class="hero-content">
-
-            <p class="hero-role"
-               data-es="Desarrollador · Líder de Proyectos · Fundador de Lunasoft Studios"
-               data-en="Developer · Project Lead · Founder of Lunasoft Studios">
-                Desarrollador · Líder de Proyectos · Fundador de Lunasoft Studios
-            </p><br>
-            <br>
-
-
-            <h1
-                data-es="Desarrollo ideas y las convierto en realidad."
-                data-en="I develop ideas and adapt them into reality.">
-                Desarrollo ideas
-                <br>
-                y las convierto en realidad.
-            </h1>
-
-
-            <p class="hero-description"
-               data-es="Programador y desarrollador de juegos enfocado en crear experiencias interactivas, software y proyectos independientes ambiciosos."
-               data-en="Programmer and game developer focused on creating interactive experiences, software and ambitious independent projects.">
-                Programador y desarrollador de juegos enfocado en crear experiencias interactivas, software y proyectos independientes ambiciosos.
-            </p>
-            <br>
-
-            <a href="#projects"
-               class="hero-button"
-               data-es="Ver proyectos"
-               data-en="View projects">
-                Ver proyectos
-            </a>
-
-            </div>
-
-            <div class="hero-photo">
-                <img src="./Images/Portfolio_image.jpg" alt="Nahuel Inguanta">
-            </div>
-
-        </section>
-
-
+    <body id="top">
         <!-- =========================
-             PROJECTS
+        NAVBAR
         ========================== -->
 
-        <section id="projects" class="projects">
-
-    <div class="section-header">
-        <h2
-            data-es="Proyectos recientes"
-            data-en="Recent projects">
-            Proyectos recientes
-        </h2>
-
-    </div>
-
-
-    <div class="projects-grid">
-
-        <!-- WHISPERING CLAWS -->
-
-        <a href="projects/whispering-claws.html" class="project-card" data-title="Whispering Claws — (DEMO)" data-category-es="Videojuego · Horror" data-category-en="Video game · Horror" data-description-es="Videojuego de horror en primera persona desarrollado en Unity." data-description-en="First-person horror game developed in Unity." data-gallery="Images/Whispering_claws.jpg|Images/WhisperingClaws/Blocking_Exterior.png|Images/WhisperingClaws/Concept_Altar.png|Images/WhisperingClaws/Concept_Protagonista.jpeg|Images/WhisperingClaws/Environment_Onyx.png|Images/WhisperingClaws/Environment_Ruby.png|Images/WhisperingClaws/Environment1.png|Images/WhisperingClaws/Environment2.png" data-github="">
-
-            <div class="project-image">
-                <img
-                    src="./Images/whispering_claws.jpg"
-                    alt="Whispering Claws"
-                    class="whispering-image">
-            </div>
-
-            <div class="project-info">
-
-                <span
-                    data-es="Videojuego · Horror"
-                    data-en="Video game · Horror">
-                    Videojuego · Horror
-                </span>
-                <br>
-                <br>
-
-                <h3>
-                    Whispering Claws - (DEMO)
-                </h3>
-
-                <p
-                    data-es="Videojuego de horror en primera persona desarrollado en Unity."
-                    data-en="First-person horror game developed in Unity.">
-                    Videojuego de horror en primera persona desarrollado en Unity.
-                </p>
-                <br>
-                <span class="project-link"
-                    data-es="Ver proyecto →"
-                    data-en="View project →">
-                    Ver proyecto →
-                </span>
-
-            </div>
-
-        </a>
-
-
-        <!-- BARSSATY -->
-
-        <a href="projects/barssaty.html" class="project-card" data-title="Barssaty" data-category-es="Desarrollo web" data-category-en="Web development" data-description-es="Sitio web para un emprendimiento de pastelería." data-description-en="Website for a pastry business." data-gallery="Images/Barssaty.jpeg" data-github="">
-
-            <div class="project-image">
-                <img
-                    src="./Images/Barssaty.jpeg"
-                    alt="Barssaty"
-                    class="barssaty-image">
-            </div>
-
-            <div class="project-info">
-
-                <span
-                    data-es="Desarrollo web"
-                    data-en="Web development">
-                    Desarrollo web
-                </span>
-                <br>
-                <br>
-
-                <h3>
-                    Barssaty
-                </h3>
-
-                <p
-                    data-es="Sitio web para un emprendimiento de pastelería."
-                    data-en="Website for a pastry business.">
-                    Sitio web para un emprendimiento de pastelería.
-                </p>
-                <br>
-
-                <span class="project-link"
-                    data-es="Ver proyecto →"
-                    data-en="View project →">
-                    Ver proyecto →
-                </span>
-
-            </div>
-
-        </a>
-
-
-        <!-- CALENDAR -->
-
-        <a href="projects/calendar.html" class="project-card" data-title="Calendar" data-category-es="Software · Aplicación" data-category-en="Software · Application" data-description-es="Aplicación para organizar eventos y fechas." data-description-en="Application for organizing events and dates." data-gallery="Images/Calendar.jpg" data-github="">
-
-            <div class="project-image">
-                <img
-                    src="./Images/Calendar.jpg"
-                    alt="Calendar">
-            </div>
-
-            <div class="project-info">
-
-                <span
-                    data-es="Software · Aplicación"
-                    data-en="Software · Application">
-                    Software · Aplicación
-                </span>
-                <br>
-                <br>
-
-                <h3>
-                    Calendar
-                </h3>
-
-                <p
-                    data-es="Aplicación para organizar eventos y fechas."
-                    data-en="Application for organizing events and dates.">
-                    Aplicación para organizar eventos y fechas.
-                </p>
-                <br>
-
-                <span class="project-link"
-                    data-es="Ver proyecto →"
-                    data-en="View project →">
-                    Ver proyecto →
-                </span>
-
-            </div>
-
-        </a>
-
-
-        <!-- 2D GAME -->
-
-        <a href="projects/save-a-cat.html" class="project-card" data-title="Save a Cat — (En desarrollo)" data-category-es="Aplicación · Mobile" data-category-en="Application · Mobile" data-description-es="Aplicación para rescatismo de animales en tiempo real. Funciona como red social para actuar y salvar animales." data-description-en="Real-time animal rescue application that works as a social network for taking action and saving animals." data-gallery="Images/Save_a_cat.jpg" data-github="">
-
-            <div class="project-image">
-                <img
-                    src="./Images/Save_a_cat.jpg"
-                    alt="Save a Cat">
-            </div>
-
-            <div class="project-info">
-
-                <span
-                    data-es="Aplicación · Mobile"
-                    data-en="Application · Mobile">
-                    Aplicación · Mobile
-                </span>
-                <br>
-                <br>
-
-                <h3
-                    data-es="Save a Cat - (En desarrollo)"
-                    data-en="Save a Cat - (On development)">
-                    Save a Cat - (En desarrollo)
-                </h3>
-
-                <p
-                    data-es="Aplicación para rescatismo de animales en tiempo real. Funciona como red social para actuar y salvar animales."
-                    data-en="Real-time animal rescue application that works as a social network for taking action and saving animals.">
-                    Aplicación para rescatismo de animales en tiempo real. Funciona como red social para actuar y salvar animales.
-                </p>
-                <br>
-
-                <span class="project-link"
-                    data-es="Ver proyecto →"
-                    data-en="View project →">
-                    Ver proyecto →
-                </span>
-
-            </div>
-
-        </a>
-
-
-    </div>
-
-</section>
-
-<div class="project-lightbox" id="project-lightbox" aria-hidden="true">
-    <section class="lightbox-panel" role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
-        <button class="lightbox-close" type="button" aria-label="Cerrar">×</button>
-        <div class="lightbox-main-image" id="lightbox-image-view" title="Pasá el cursor para ampliar y arrastrá para explorar"><img id="lightbox-image" src="" alt=""></div>
-        <div class="lightbox-details">
-            <span class="lightbox-category" id="lightbox-category"></span>
-            <h2 id="lightbox-title"></h2>
-            <p id="lightbox-description"></p>
-            <div class="lightbox-gallery" id="lightbox-gallery" aria-label="Imágenes del proyecto"></div>
-            <div class="lightbox-actions">
-                <a class="lightbox-action github-action" id="lightbox-github" target="_blank" rel="noopener noreferrer" data-es="Ver en GitHub ↗" data-en="View on GitHub ↗">Ver en GitHub ↗</a>
-                <a class="lightbox-action detail-action" id="lightbox-detail" data-es="Ver proyecto completo →" data-en="View full project →">Ver proyecto completo →</a>
-            </div>
-        </div>
-    </section>
-</div>
-
-
+        <header>
+            <nav>
+                <a class="logo" href="#top" aria-label="Volver al inicio">NAHUEL INGUANTA</a>
+                <div class="nav-links">
+                    <a href="#projects" data-es="Proyectos" data-en="Projects">Proyectos</a>
+                    <a href="#experience" data-es="Experiencia" data-en="Experience">Experiencia</a>
+                    <a href="https://lunasoftstudios.com" data-es="Lunasoft Studios" data-en="Lunasoft Studios">
+                        Lunasoft Studios
+                    </a>
+                    <a href="#contact" data-es="Contacto" data-en="Contact">Contacto</a>
+                </div>
+                <!-- SELECTOR DE IDIOMA -->
+                <div class="language-switch">
+                    <button id="lang-es">ES</button>
+                    <span>/</span>
+                    <button id="lang-en">EN</button>
+                </div>
+            </nav>
+        </header>
         <!-- =========================
-             SKILLS
+        HERO
         ========================== -->
 
-        <section class="skills">
+        <main>
 
-            <div class="section-header">
+            <section class="hero">
+                <div class="hero-content">
+                    <p
+                        class="hero-role"
+                        data-es="Desarrollador · Líder de Proyectos · Fundador de Lunasoft Studios"
+                        data-en="Developer · Project Lead · Founder of Lunasoft Studios"
+                    >
+                        Desarrollador · Líder de Proyectos · Fundador de Lunasoft Studios
+                    </p>
+                    <br>
+                    <br>
+                    <h1
+                        data-es="Desarrollo ideas y las convierto en realidad."
+                        data-en="I develop ideas and adapt them into reality."
+                    >
+                        Desarrollo ideas
+                        <br>
+                        y las convierto en realidad.
+                    </h1>
+                    <p
+                        class="hero-description"
+                        data-es="Programador y desarrollador de juegos enfocado en crear experiencias interactivas, software y proyectos independientes ambiciosos."
+                        data-en="Programmer and game developer focused on creating interactive experiences, software and ambitious independent projects."
+                    >
+                        Programador y desarrollador de juegos enfocado en crear experiencias interactivas, software y proyectos independientes ambiciosos.
+                    </p>
+                    <br>
+                    <a
+                        href="#projects"
+                        class="hero-button"
+                        data-es="Ver proyectos"
+                        data-en="View projects"
+                    >
+                        Ver proyectos
+                    </a>
+                </div>
+                <div class="hero-photo">
+                    <img src="./Images/Portfolio_image.jpg" alt="Nahuel Inguanta">
+                </div>
+            </section>
 
-                <h2
-                    data-es="Tecnologías y áreas"
-                    data-en="Technologies and areas">
-                    Tecnologías y áreas
+            <section id="experience" class="experience" aria-labelledby="experience-title">
+                <p
+                    class="eyebrow"
+                    data-es="Recorrido y áreas de trabajo"
+                    data-en="Background &amp; areas of work"
+                >
+                    Recorrido y áreas de trabajo
+                </p>
+                <h2 id="experience-title" data-es="Experiencia" data-en="Experience">
+                    Experiencia
                 </h2>
+                <p
+                    class="experience-intro"
+                    data-es="Más de seis años entre desarrollo web, análisis funcional, datos y soporte IT. Hoy combino ese recorrido con la automatización, la inteligencia artificial y el desarrollo de videojuegos independientes."
+                    data-en="Over six years spanning web development, functional analysis, data and IT support. Today I combine that background with automation, artificial intelligence and independent game development."
+                >
+                    Más de seis años entre desarrollo web, análisis funcional, datos y soporte IT. Hoy combino ese recorrido con la automatización, la inteligencia artificial y el desarrollo de videojuegos independientes.
+                </p>
+                <div class="experience-grid">
 
+                    <article class="experience-card">
+                        <span class="experience-number">01</span>
+                        <h3 data-es="Videojuegos" data-en="Game development">Videojuegos</h3>
+                        <p
+                            data-es="Desarrollo de proyectos independientes en Unity y C#, con Whispering Claws como proyecto principal. Desde octubre de 2025, también impulso LunaSoft Studios."
+                            data-en="Independent projects built with Unity and C#, with Whispering Claws as my main project. Since October 2025, I have also been building LunaSoft Studios."
+                        >
+                            Desarrollo de proyectos independientes en Unity y C#, con Whispering Claws como proyecto principal. Desde octubre de 2025, también impulso LunaSoft Studios.
+                        </p>
+                        <ul class="experience-tools">
+                            <li>
+                                Unity
+                            </li>
+                            <li>
+                                C#
+                            </li>
+                            <li>
+                                Trello
+                            </li>
+                            <li>
+                                Miro
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="experience-card">
+                        <span class="experience-number">02</span>
+                        <h3 data-es="Software, web y datos" data-en="Software, web &amp; data">
+                            Software, web y datos
+                        </h3>
+                        <p
+                            data-es="Desarrollo web, actualización de bases de datos y consultas SQL. Análisis funcional, debugging y testing de e-commerce para vendedores y clientes autogestionables. Experiencia con GLPI y análisis de incidencias en SAP."
+                            data-en="Web development, database updates and SQL queries. Functional analysis, debugging and e-commerce testing for sales representatives and self-service customers. Experience with GLPI and SAP incident analysis."
+                        >
+                            Desarrollo web, actualización de bases de datos y consultas SQL. Análisis funcional, debugging y testing de e-commerce para vendedores y clientes autogestionables. Experiencia con GLPI y análisis de incidencias en SAP.
+                        </p>
+                        <ul class="experience-tools">
+                            <li>
+                                PHP
+                            </li>
+                            <li>
+                                SQL Server
+                            </li>
+                            <li>
+                                HTML / CSS
+                            </li>
+                            <li>
+                                JavaScript
+                            </li>
+                            <li>
+                                TypeScript
+                            </li>
+                            <li>
+                                GLPI
+                            </li>
+                            <li>
+                                SAP
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="experience-card">
+                        <span class="experience-number">03</span>
+                        <h3 data-es="Automatización e IA" data-en="Automation &amp; AI">
+                            Automatización e IA
+                        </h3>
+                        <p
+                            data-es="Automatización de servicios y tareas manuales con Python, con validación y seguimiento de su funcionamiento. Uso de inteligencia artificial y bases de datos para acompañar los procesos operativos."
+                            data-en="Automation of services and manual tasks with Python, including validation and monitoring. Use of artificial intelligence and databases to support operational processes."
+                        >
+                            Automatización de servicios y tareas manuales con Python, con validación y seguimiento de su funcionamiento. Uso de inteligencia artificial y bases de datos para acompañar los procesos operativos.
+                        </p>
+                        <ul class="experience-tools">
+                            <li>
+                                Python
+                            </li>
+                            <li>
+                                ChatGPT
+                            </li>
+                            <li>
+                                SQL
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="experience-card">
+                        <span class="experience-number">04</span>
+                        <h3 data-es="Liderazgo y proyectos" data-en="Leadership &amp; projects">
+                            Liderazgo y proyectos
+                        </h3>
+                        <p
+                            data-es="Coordinación de desarrolladores y diseñadores, planificación de tareas y comunicación con clientes y consultoras. Experiencia liderando un equipo para seis clientes corporativos en Chile y actuando como interlocutor en incidencias de SAP."
+                            data-en="Coordination of developers and designers, task planning, and communication with clients and consultancies. Experience leading a team serving six corporate clients in Chile and liaising on SAP incidents."
+                        >
+                            Coordinación de desarrolladores y diseñadores, planificación de tareas y comunicación con clientes y consultoras. Experiencia liderando un equipo para seis clientes corporativos en Chile y actuando como interlocutor en incidencias de SAP.
+                        </p>
+                        <ul class="experience-tools">
+                            <li>
+                                Trello
+                            </li>
+                            <li>
+                                KPIs / OKRs
+                            </li>
+                            <li>
+                                Git / GitHub
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="career">
+                    <h3 data-es="Trayectoria profesional" data-en="Professional background">
+                        Trayectoria profesional
+                    </h3>
+                    <ol class="career-list">
+                        <li class="career-item">
+                            <p
+                                class="career-date"
+                                data-es="Oct 2025 — Actualidad"
+                                data-en="Oct 2025 — Present"
+                            >
+                                Oct 2025 — Actualidad
+                            </p>
+                            <div>
+                                <p class="career-company">LunaSoft Studios</p>
+                                <h4
+                                    data-es="Fundador y desarrollador de videojuegos"
+                                    data-en="Founder &amp; game developer"
+                                >
+                                    Fundador y desarrollador de videojuegos
+                                </h4>
+                                <ul class="career-responsibilities">
+                                 <li
+                                    data-es="Desarrollo de videojuegos independientes y puesta en marcha de Lunasoft Studios."
+                                    data-en="Independent game development and establishment of the studio."
+                                 >
+                                    Desarrollo de videojuegos independientes y puesta en marcha de Lunasoft Studios.
+                                 </li>  
+                                 <li
+                                    data-es="Comienzo de desarrollo de la demo de Whispering Claws."
+                                    data-en="Start of development of the Whispering Claws demo."
+                                 >
+                                    Comienzo de desarrollo de la demo de Whispering Claws.
+                                 </li>                                      
+                            </ul>
+            
+                            </div>
+                        </li>
+                        <li class="career-item" id="current-role">
+                            <p
+                                class="career-date"
+                                data-es="Ago 2025 — Actualidad"
+                                data-en="Aug 2025 — Present"
+                            >
+                                Ago 2025 — Actualidad
+                            </p>
+                            <div>
+                                <p class="career-company">Mayorista Nini</p>
+                                <h4
+                                    data-es="Analista Funcional · QA Tester"
+                                    data-en="Functional Analyst · QA Tester"
+                                >
+                                    Analista Funcional · QA Tester
+                                </h4>
+                                <ul class="career-responsibilities">
+                                    <li
+                                        data-es="Soporte funcional a un equipo de 60 vendedores: resolución de problemas, debugging y testing del e-commerce utilizado en tablets y por clientes autogestionables."
+                                        data-en="Functional support for a team of 60 sales representatives: problem solving, debugging and testing of the e-commerce platform used on tablets and by self-service customers."
+                                    >
+                                        Soporte funcional a un equipo de 60 vendedores: resolución de problemas, debugging y testing del e-commerce utilizado en tablets y por clientes autogestionables.
+                                    </li>
+                                    <li
+                                        data-es="Automatización de servicios y tareas manuales con Python, incluyendo validación y seguimiento de su ejecución."
+                                        data-en="Automation of services and manual tasks with Python, including validation and execution monitoring."
+                                    >
+                                        Automatización de servicios y tareas manuales con Python, incluyendo validación y seguimiento de su ejecución.
+                                    </li>
+                                    <li
+                                        data-es="Actualización de bases de datos, mantenimiento y edición de código PHP, consultas SQL y actualización de GLPI a nuevas versiones."
+                                        data-en="Database updates, PHP code maintenance and editing, SQL queries, and GLPI version upgrades."
+                                    >
+                                        Actualización de bases de datos, mantenimiento y edición de código PHP, consultas SQL y actualización de GLPI a nuevas versiones.
+                                    </li>
+                                    <li
+                                        data-es="Interlocución entre la empresa y SAP / consultoras. Análisis y resolución de incidencias mediante transacciones de SAP, revisión de IDocs y archivos de texto."
+                                        data-en="Liaison between the company and SAP / consultancies. Incident analysis and resolution using SAP transactions, IDoc review and text files."
+                                    >
+                                        Interlocución entre la empresa y SAP / consultoras. Análisis y resolución de incidencias mediante transacciones de SAP, revisión de IDocs y archivos de texto.
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ol>
+                    <details class="career-history">
+                        <summary>
+                            <span data-es="Ver recorrido anterior · 2019–2025" data-en="View previous roles · 2019–2025">Ver recorrido anterior · 2019–2025</span>
+                        </summary>
+                        <ol class="career-list">
+                            <li class="career-item">
+                                <p
+                                    class="career-date"
+                                    data-es="Dic 2024 — Jul 2025"
+                                    data-en="Dec 2024 — Jul 2025"
+                                >
+                                    Dic 2024 — Jul 2025
+                                </p>
+                                <div>
+                                    <p class="career-company">Mayorista Nini</p>
+                                    <h4
+                                        data-es="Especialista en Soporte IT"
+                                        data-en="IT Support Specialist"
+                                    >
+                                        Especialista en Soporte IT
+                                    </h4>
+                                    <p
+                                        data-es="Soporte de nivel 2 y 3, resolución de incidentes y migración de bases de datos legadas con PHP y MySQL."
+                                        data-en="Level 2 and 3 support, incident resolution and legacy database migration with PHP and MySQL."
+                                    >
+                                        Soporte de nivel 2 y 3, resolución de incidentes y migración de bases de datos legadas con PHP y MySQL.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="career-item">
+                                <p
+                                    class="career-date"
+                                    data-es="Dic 2022 — Dic 2024"
+                                    data-en="Dec 2022 — Dec 2024"
+                                >
+                                    Dic 2022 — Dic 2024
+                                </p>
+                                <div>
+                                    <p class="career-company">Mayorista Nini</p>
+                                    <h4
+                                        data-es="Cajero · Operaciones de Tesorería"
+                                        data-en="Cashier · Treasury Operations"
+                                    >
+                                        Cajero · Operaciones de Tesorería
+                                    </h4>
+                                    <p
+                                        data-es="Atención al cliente y gestión de cobros. Promoción a funciones de mayor responsabilidad en tesorería, con manejo de grandes volúmenes de efectivo y control de rendiciones."
+                                        data-en="Customer service and payment processing. Promoted to treasury duties with greater responsibility, handling large volumes of cash and reconciling settlements."
+                                    >
+                                        Atención al cliente y gestión de cobros. Promoción a funciones de mayor responsabilidad en tesorería, con manejo de grandes volúmenes de efectivo y control de rendiciones.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="career-item">
+                                <p
+                                    class="career-date"
+                                    data-es="Dic 2021 — Mar 2022"
+                                    data-en="Dec 2021 — Mar 2022"
+                                >
+                                    Dic 2021 — Mar 2022
+                                </p>
+                                <div>
+                                    <p class="career-company">WIWO · ex The Oniric Company</p>
+                                    <h4
+                                        data-es="Project Manager · Data Entry Specialist · Gestor Web"
+                                        data-en="Project Manager · Data Entry Specialist · Web Manager"
+                                    >
+                                        Project Manager · Data Entry Specialist · Gestor Web
+                                    </h4>
+                                    <p
+                                        data-es="Liderazgo de equipo para seis clientes corporativos chilenos, asignación de tareas, seguimiento de KPIs y OKRs y gestión de requerimientos. Colaboración en programación."
+                                        data-en="Team leadership for six Chilean corporate clients, task assignment, KPI and OKR tracking, and requirements management. Programming support."
+                                    >
+                                        Liderazgo de equipo para seis clientes corporativos chilenos, asignación de tareas, seguimiento de KPIs y OKRs y gestión de requerimientos. Colaboración en programación.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="career-item">
+                                <p
+                                    class="career-date"
+                                    data-es="Dic 2019 — Feb 2022"
+                                    data-en="Dec 2019 — Feb 2022"
+                                >
+                                    Dic 2019 — Feb 2022
+                                </p>
+                                <div>
+                                    <p class="career-company">MI PC Informática</p>
+                                    <h4
+                                        data-es="Gestor Web · Consultor de Marketing"
+                                        data-en="Web Manager · Marketing Consultant"
+                                    >
+                                        Gestor Web · Consultor de Marketing
+                                    </h4>
+                                    <p
+                                        data-es="Diseño, desarrollo y mantenimiento de dos sitios web; gestión de requerimientos de marketing digital y seguimiento de métricas en Google Analytics."
+                                        data-en="Design, development and maintenance of two websites; digital marketing requirements and Google Analytics tracking."
+                                    >
+                                        Diseño, desarrollo y mantenimiento de dos sitios web; gestión de requerimientos de marketing digital y seguimiento de métricas en Google Analytics.
+                                    </p>
+                                </div>
+                            </li>
+                        </ol>
+                    </details>
+                </div>
+            </section>
+            <!-- =========================
+            PROJECTS
+            ========================== -->
+
+            <section id="projects" class="projects">
+                <div class="section-header">
+                    <h2 data-es="Proyectos destacados" data-en="Featured projects">
+                        Proyectos destacados
+                    </h2>
+                </div>
+                <div class="projects-grid">
+                    <!-- WHISPERING CLAWS -->
+                    <a
+                        href="projects.html#whispering-claws"
+                        class="project-card"
+                        data-title="Whispering Claws — (DEMO)"
+                        data-category-es="Videojuego · Horror"
+                        data-category-en="Video game · Horror"
+                        data-description-es="Videojuego de horror en primera persona desarrollado en Unity."
+                        data-description-en="First-person horror game developed in Unity."
+                        data-gallery="Images/Whispering_claws.jpg|Images/WhisperingClaws/Blocking_Exterior.png|Images/WhisperingClaws/Concept_Altar.png|Images/WhisperingClaws/Concept_Protagonista.jpeg|Images/WhisperingClaws/Environment_Onyx.png|Images/WhisperingClaws/Environment_Ruby.png|Images/WhisperingClaws/Environment1.png|Images/WhisperingClaws/Environment2.png"
+                        data-github=""
+                    >
+                        <div class="project-image">
+                            <img
+                                src="./Images/Whispering_claws.jpg"
+                                alt="Whispering Claws"
+                                class="whispering-image"
+                            >
+                        </div>
+                        <div class="project-info">
+                            <span data-es="Videojuego · Horror" data-en="Video game · Horror">
+                                Videojuego · Horror
+                            </span>
+                            <br>
+                            <br>
+                            <h3>Whispering Claws - (DEMO)</h3>
+                            <p
+                                data-es="Videojuego de horror en primera persona desarrollado en Unity."
+                                data-en="First-person horror game developed in Unity."
+                            >
+                                Videojuego de horror en primera persona desarrollado en Unity.
+                            </p>
+                            <br>
+                            <span
+                                class="project-link"
+                                data-es="Ver proyecto →"
+                                data-en="View project →"
+                            >
+                                Ver proyecto →
+                            </span>
+                        </div>
+                    </a>
+                    <!-- BARSSATY -->
+                    <a
+                        href="projects.html#barssaty"
+                        class="project-card"
+                        data-title="Barssaty"
+                        data-category-es="Desarrollo web"
+                        data-category-en="Web development"
+                        data-description-es="Sitio web para un emprendimiento de pastelería."
+                        data-description-en="Website for a pastry business."
+                        data-gallery="Images/Barssaty.jpeg"
+                        data-github=""
+                    >
+                        <div class="project-image">
+                            <img src="./Images/Barssaty.jpeg" alt="Barssaty" class="barssaty-image">
+                        </div>
+                        <div class="project-info">
+                            <span data-es="Desarrollo web" data-en="Web development">
+                                Desarrollo web
+                            </span>
+                            <br>
+                            <br>
+                            <h3>Barssaty</h3>
+                            <p
+                                data-es="Sitio web para un emprendimiento de pastelería."
+                                data-en="Website for a pastry business."
+                            >
+                                Sitio web para un emprendimiento de pastelería.
+                            </p>
+                            <br>
+                            <span
+                                class="project-link"
+                                data-es="Ver proyecto →"
+                                data-en="View project →"
+                            >
+                                Ver proyecto →
+                            </span>
+                        </div>
+                    </a>
+                    <!-- CALENDAR -->
+                    <a
+                        href="projects.html#calendar"
+                        class="project-card"
+                        data-title="Calendar"
+                        data-category-es="Software · Aplicación"
+                        data-category-en="Software · Application"
+                        data-description-es="Aplicación para organizar eventos y fechas."
+                        data-description-en="Application for organizing events and dates."
+                        data-gallery="Images/Calendar.jpg"
+                        data-github=""
+                    >
+                        <div class="project-image">
+                            <img src="./Images/Calendar.jpg" alt="Calendar">
+                        </div>
+                        <div class="project-info">
+                            <span data-es="Software · Aplicación" data-en="Software · Application">
+                                Software · Aplicación
+                            </span>
+                            <br>
+                            <br>
+                            <h3>Calendar</h3>
+                            <p
+                                data-es="Aplicación para organizar eventos y fechas."
+                                data-en="Application for organizing events and dates."
+                            >
+                                Aplicación para organizar eventos y fechas.
+                            </p>
+                            <br>
+                            <span
+                                class="project-link"
+                                data-es="Ver proyecto →"
+                                data-en="View project →"
+                            >
+                                Ver proyecto →
+                            </span>
+                        </div>
+                    </a>
+                    <!-- SAVE A CAT -->
+                    <a
+                        href="projects.html#save-a-cat"
+                        class="project-card"
+                        data-title="Save a Cat — (Idea)"
+                        data-category-es="Aplicación · Mobile"
+                        data-category-en="Application · Mobile"
+                        data-description-es="Idea de una aplicación para rescatar animales en tiempo real, con una red social para coordinar ayuda."
+                        data-description-en="An app idea for real-time animal rescue, with a social network to coordinate help."
+                        data-gallery="Images/Save_a_cat.jpg"
+                        data-github=""
+                    >
+                        <div class="project-image">
+                            <img src="./Images/Save_a_cat.jpg" alt="Save a Cat">
+                        </div>
+                        <div class="project-info">
+                            <span data-es="Aplicación · Mobile" data-en="Application · Mobile">
+                                Aplicación · Mobile
+                            </span>
+                            <br>
+                            <br>
+                            <h3
+                                data-es="Save a Cat - (Idea)"
+                                data-en="Save a Cat - (Idea)"
+                            >
+                                Save a Cat - (Idea)
+                            </h3>
+                            <p
+                                data-es="Idea de una aplicación para rescatar animales en tiempo real, con una red social para coordinar ayuda."
+                                data-en="An app idea for real-time animal rescue, with a social network to coordinate help."
+                            >
+                                Idea de una aplicación para rescatar animales en tiempo real, con una red social para coordinar ayuda.
+                            </p>
+                            <br>
+                            <span
+                                class="project-link"
+                                data-es="Ver proyecto →"
+                                data-en="View project →"
+                            >
+                                Ver proyecto →
+                            </span>
+                        </div>
+                    </a>
+                    <a href="projects.html" class="more-projects-card">
+                        <span class="eyebrow" data-es="Seguí explorando" data-en="Keep exploring">Seguí explorando</span><h3 data-es="Ver más proyectos" data-en="View more projects">Ver más proyectos</h3><p data-es="Videojuegos, aplicaciones y nuevas ideas. Conocé todos los proyectos y su estado." data-en="Games, applications and new ideas. Explore every project and its status.">Videojuegos, aplicaciones y nuevas ideas. Conocé todos los proyectos y su estado.</p><span class="more-projects-arrow" aria-hidden="true">→</span>
+                    </a>
+                </div>
+            </section>
+            <div class="project-lightbox" id="project-lightbox" aria-hidden="true">
+
+                <section
+                    class="lightbox-panel"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-labelledby="lightbox-title"
+                >
+                    <button class="lightbox-close" type="button" aria-label="Cerrar">×</button>
+                    <div
+                        class="lightbox-main-image"
+                        id="lightbox-image-view"
+                        title="Pasá el cursor para ampliar y arrastrá para explorar"
+                    >
+                        <img id="lightbox-image" src="" alt="">
+                    </div>
+                    <div class="lightbox-details">
+                        <span class="lightbox-category" id="lightbox-category"></span>
+                        <h2 id="lightbox-title"></h2>
+                        <p id="lightbox-description"></p>
+                        <div
+                            class="lightbox-gallery"
+                            id="lightbox-gallery"
+                            aria-label="Imágenes del proyecto"
+                        >
+                        </div>
+                        <div class="lightbox-actions">
+                            <a
+                                class="lightbox-action github-action"
+                                id="lightbox-github"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                data-es="Ver en GitHub ↗"
+                                data-en="View on GitHub ↗"
+                            >
+                                Ver en GitHub ↗
+                            </a>
+                            <a
+                                class="lightbox-action detail-action"
+                                id="lightbox-detail"
+                                data-es="Ver proyecto completo →"
+                                data-en="View full project →"
+                            >
+                                Ver proyecto completo →
+                            </a>
+                        </div>
+                    </div>
+                </section>
             </div>
+            <!-- =========================
+            CONTACT
+            ========================== -->
 
+            <section id="contact" class="contact">
+                <div class="section-header">
+                    <h2
+                        data-es="¿Qué podemos construir juntos?"
+                        data-en="What can we build together?"
+                    >
+                        ¿Qué podemos construir juntos?
+                    </h2>
+                </div>
+                <p
+                    data-es="Si querés hablar sobre un proyecto, una colaboración o simplemente conocer mi trabajo, podés contactarme."
+                    data-en="If you'd like to talk about a project, a collaboration, or simply learn more about my work, feel free to contact me."
+                >
+                    Si querés hablar sobre un proyecto, una colaboración o simplemente conocer mi trabajo, podés contactarme.
+                </p>
+                <br>
 
-            <div class="skills-list">
-
-                <span>Unity</span>
-                <span>C#</span>
-                <span>HTML / CSS / JavaScript</span>
-                <span>SQL</span>
-                <span>Git</span>
-                <span
-                    data-es="Desarrollo de videojuegos"
-                    data-en="Game development">
-                    Desarrollo de videojuegos
-                </span>
-
-                <span
-                    data-es="Desarrollo de software"
-                    data-en="Software development">
-                    Desarrollo de software
-                </span>
-
-                <span
-                    data-es="Gestión de proyectos"
-                    data-en="Project management">
-                    Gestión de proyectos
-                </span>
-
-            </div>
-
-        </section>
-
-
+                <form
+                    id="contact-form"
+                    class="contact-form"
+                    action="https://formsubmit.co/nahuelinguanta@lunasoftstudios.com"
+                    method="POST"
+                    data-endpoint="https://formsubmit.co/ajax/nahuelinguanta@lunasoftstudios.com"
+                >
+                    <div class="contact-fields">
+                        <div class="contact-field">
+                            <label for="contact-name">
+                                <span data-es="Nombre completo" data-en="Full Name">Nombre completo</span><span class="contact-required" aria-hidden="true">*</span>
+                            </label>
+                            <input
+                                id="contact-name"
+                                name="name"
+                                type="text"
+                                autocomplete="name"
+                                required
+                                minlength="2"
+                                maxlength="100"
+                            >
+                        </div>
+                        <div class="contact-field">
+                            <label for="contact-email">
+                                <span data-es="Email" data-en="Email">Email</span><span class="contact-required" aria-hidden="true">*</span>
+                            </label>
+                            <input
+                                id="contact-email"
+                                name="email"
+                                type="email"
+                                autocomplete="email"
+                                required
+                                maxlength="254"
+                            >
+                        </div>
+                        <div class="contact-field contact-field-wide">
+                            <label
+                                for="contact-phone"
+                                data-es="Teléfono (opcional)"
+                                data-en="Phone (optional)"
+                            >
+                                Teléfono (opcional)
+                            </label>
+                            <input
+                                id="contact-phone"
+                                name="phone"
+                                type="tel"
+                                autocomplete="tel"
+                                maxlength="40"
+                                aria-describedby="contact-phone-hint"
+                            >
+                            <p
+                                id="contact-phone-hint"
+                                class="contact-hint"
+                                data-es="Incluí el código de país si querés que te contacte por teléfono."
+                                data-en="Include your country code if you would like me to contact you by phone."
+                            >
+                                Incluí el código de país si querés que te contacte por teléfono.
+                            </p>
+                        </div>
+                        <div class="contact-field contact-field-wide">
+                            <label for="contact-message">
+                                <span data-es="Dejame tu mensaje" data-en="Leave your message">Dejame tu mensaje</span><span class="contact-required" aria-hidden="true">*</span>
+                            </label>
+                            <textarea
+                                id="contact-message"
+                                name="message"
+                                rows="5"
+                                required
+                                minlength="10"
+                                maxlength="6000"
+                                aria-describedby="contact-message-hint"
+                            >
+                            </textarea>
+                            <p
+                                id="contact-message-hint"
+                                class="contact-hint"
+                                data-es="(*) es obligatorio."
+                                data-en="(*) are required."
+                            >
+                                (*) es obligatorio.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contact-honeypot" aria-hidden="true">
+                        <label for="contact-website">Website</label>
+                        <input
+                            id="contact-website"
+                            name="_honey"
+                            type="text"
+                            tabindex="-1"
+                            autocomplete="off"
+                        >
+                    </div>
+                    <input
+                        type="hidden"
+                        name="_subject"
+                        value="Nueva consulta desde el portafolio de Nahuel Inguanta"
+                    >
+                    <input type="hidden" name="_template" value="table">
+                    <div class="contact-submit-row">
+                        <button
+                            id="contact-submit"
+                            class="contact-submit"
+                            type="submit"
+                            data-es="Enviar mensaje"
+                            data-en="Send message"
+                        >
+                            Enviar mensaje
+                        </button>
+                        <p
+                            class="contact-privacy"
+                            data-es="Usaré tus datos para responder a tu consulta."
+                            data-en="I will use your details to reply to your inquiry."
+                        >
+                            Usaré tus datos para responder a tu consulta.
+                        </p>
+                    </div>
+                    <p
+                        id="contact-status"
+                        class="contact-status"
+                        role="status"
+                        aria-live="polite"
+                        aria-atomic="true"
+                        hidden
+                    >
+                    </p>
+                </form>
+            </section>
+        </main>
         <!-- =========================
-             CONTACT
+        FOOTER
         ========================== -->
 
-        <section id="contact" class="contact">
-
-            <div class="section-header">
-
-
-                <h2
-                    data-es="¿Trabajamos juntos?"
-                    data-en="Let's build something together.">
-                    ¿Trabajamos juntos?
-                </h2>
-
-            </div>
-
-
-            <p
-                data-es="Si querés hablar sobre un proyecto, una colaboración o simplemente conocer mi trabajo, podés contactarme."
-                data-en="If you'd like to talk about a project, a collaboration, or simply learn more about my work, feel free to contact me.">
-                Si querés hablar sobre un proyecto, una colaboración
-                o simplemente conocer mi trabajo, podés contactarme.
-            </p>
-            <br>
-
-            <a href="mailto:tuemail@email.com"
-               data-es="Contactarme →"
-               data-en="Get in touch →">
-                Contactarme →
-            </a>
-
-        </section>
-
-    </main>
-
-
-    <!-- =========================
-         FOOTER
-    ========================== -->
-
-    <footer>
-
-        <p>
-            © 2026 Nahuel Inguanta
-        </p>
-
-        <p
-            data-es="Diseñado y desarrollado por Nahuel."
-            data-en="Designed and developed by Nahuel.">
-            Diseñado y desarrollado por Nahuel Inguanta.
-        </p>
-
-    </footer>
-
-
-    <!-- JAVASCRIPT -->
-
-    <script src="/main.js"></script>
-
-</body>
-
+        <footer>
+            <p>© 2026 Nahuel Inguanta</p>
+        </footer>
+        <!-- JAVASCRIPT -->
+        <script src="/main.js">
+        </script>
+        <script src="/contact.js">
+        </script>
+    </body>
 </html>

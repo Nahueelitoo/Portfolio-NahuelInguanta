@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Proyectos - Nahuel Inguanta</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+            rel="stylesheet"
+        >
+        <link rel="stylesheet" href="/style.css">
+    </head>
+
+    <body>
+
+        <header>
+            <nav>
+                <a class="logo" href="/">NAHUEL INGUANTA</a>
+                <div class="nav-links">
+                    <a href="/" data-es="Volver al portafolio" data-en="Back to portfolio">
+                        Volver al portafolio
+                    </a>
+                </div>
+                <div class="language-switch">
+                    <button id="lang-es" type="button">ES</button>
+                    <span>/</span>
+                    <button id="lang-en" type="button">EN</button>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+
+            <section class="catalog">
+                <p class="eyebrow" data-es="Archivo de proyectos" data-en="Project archive">
+                    Archivo de proyectos
+                </p>
+                <h1 data-es="Ideas que toman forma." data-en="Ideas taking shape.">
+                    Ideas que toman forma.
+                </h1>
+                <p
+                    class="experience-intro"
+                    data-es="Videojuegos, herramientas y proyectos en distintos momentos de desarrollo. Este catálogo irá creciendo con mi trabajo."
+                    data-en="Games, tools and projects at different stages of development. This catalog will grow alongside my work."
+                >
+                    Videojuegos, herramientas y proyectos en distintos momentos de desarrollo. Este catálogo irá creciendo con mi trabajo.
+                </p>
+                <div class="catalog-filters">
+                    <div class="catalog-filter-row">
+                        <p
+                            id="category-filter-label"
+                            class="filter-label"
+                            data-es="Tipo de proyecto"
+                            data-en="Project type"
+                        >
+                            Tipo de proyecto
+                        </p>
+                        <div
+                            class="project-filters"
+                            role="group"
+                            aria-labelledby="category-filter-label"
+                        >
+                            <button
+                                type="button"
+                                data-filter-category="all"
+                                aria-pressed="true"
+                                data-es="Todos"
+                                data-en="All"
+                            >
+                                Todos
+                            </button>
+                            <button
+                                type="button"
+                                data-filter-category="games"
+                                aria-pressed="false"
+                                data-es="Videojuegos"
+                                data-en="Games"
+                            >
+                                Videojuegos
+                            </button>
+                            <button
+                                type="button"
+                                data-filter-category="software"
+                                aria-pressed="false"
+                                data-es="Software y web"
+                                data-en="Software &amp; web"
+                            >
+                                Software y web
+                            </button>
+                        </div>
+                    </div>
+                    <div class="catalog-filter-row">
+                        <p
+                            id="status-filter-label"
+                            class="filter-label"
+                            data-es="Estado"
+                            data-en="Status"
+                        >
+                            Estado
+                        </p>
+                        <div
+                            class="project-filters"
+                            role="group"
+                            aria-labelledby="status-filter-label"
+                        >
+                            <button
+                                type="button"
+                                data-filter-status="all"
+                                aria-pressed="true"
+                                data-es="Todos"
+                                data-en="All"
+                            >
+                                Todos
+                            </button>
+                            <button
+                                type="button"
+                                data-filter-status="development"
+                                aria-pressed="false"
+                                data-es="En desarrollo"
+                                data-en="In development"
+                            >
+                                En desarrollo
+                            </button>
+                            <button
+                                type="button"
+                                data-filter-status="idea"
+                                aria-pressed="false"
+                                data-es="Ideas"
+                                data-en="Ideas"
+                            >
+                                Ideas
+                            </button>
+                            <button
+                                type="button"
+                                data-filter-status="completed"
+                                aria-pressed="false"
+                                data-es="Finalizados"
+                                data-en="Completed"
+                            >
+                                Finalizados
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <p
+                    id="catalog-empty"
+                    class="catalog-empty"
+                    role="status"
+                    hidden
+                    data-es="Todavía no hay proyectos para esta combinación de filtros. Probá con otro tipo o estado."
+                    data-en="There are no projects for this filter combination yet. Try another type or status."
+                >
+                    Todavía no hay proyectos para esta combinación de filtros. Probá con otro tipo o estado.
+                </p>
+                <div class="catalog-grid">
+
+                    <article
+                        id="whispering-claws"
+                        class="catalog-card"
+                        data-category="games"
+                        data-gallery="Images/Whispering_claws.jpg|Images/WhisperingClaws/Blocking_Exterior.png|Images/WhisperingClaws/Concept_Altar.png|Images/WhisperingClaws/Concept_Protagonista.jpeg|Images/WhisperingClaws/Environment_Onyx.png|Images/WhisperingClaws/Environment_Ruby.png|Images/WhisperingClaws/Environment1.png|Images/WhisperingClaws/Environment2.png"
+                        data-status="development"
+                    >
+                        <div class="catalog-image">
+                            <img
+                                src="Images/Whispering_claws.jpg"
+                                alt="Whispering Claws"
+                                loading="lazy"
+                            >
+                        </div>
+                        <div class="catalog-info">
+                            <span
+                                class="project-status"
+                                data-es="En desarrollo"
+                                data-en="In development"
+                            >
+                                En desarrollo
+                            </span>
+                            <p
+                                class="catalog-category"
+                                data-es="Videojuego · Horror"
+                                data-en="Video game · Horror"
+                            >
+                                Videojuego · Horror
+                            </p>
+                            <h2>Whispering Claws - (DEMO)</h2>
+                            <p
+                                data-es="Videojuego de horror en primera persona desarrollado en Unity."
+                                data-en="First-person horror game developed in Unity."
+                            >
+                                Videojuego de horror en primera persona desarrollado en Unity.
+                            </p>
+                            <button class="catalog-open" type="button" data-es="Explorar proyecto" data-en="Explore project">
+                                Explorar proyecto
+                            </button>
+
+                            <template class="project-detail-content">
+                                <!-- Editá estas secciones para ampliar la ficha, en ambos idiomas. -->
+                                <section class="project-story-section">
+                                    <h3 data-es="Sobre la demo" data-en="About the demo">Sobre la demo</h3>
+                                    <p data-es="Whispering Claws es un videojuego de terror en primera persona desarrollado en Unity 6.4." data-en="Whispering Claws is a first-person horror game developed in Unity 6.4.">
+                                        Whispering Claws es un videojuego de terror en primera persona desarrollado en Unity 6.4.
+                                    </p>
+                                    <p>
+                                        <span data-es="El objetivo actual es completar la demo y lanzarla en" data-en="The current goal is to complete the demo and release it on">El objetivo actual es completar la demo y lanzarla en</span>
+                                        <a
+                                            class="project-platform"
+                                            href="https://store.steampowered.com/app/5047720/Whispering_Claws/?beta=1"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >Steam</a>.
+                                    </p>
+                                </section>
+                                <section class="project-story-section">
+                                    <h3 data-es="La historia" data-en="The story">La historia</h3>
+                                    <p data-es="La historia sigue a Elinor Shanks, una reportera que regresa a su pueblo natal. Ese regreso es el punto de partida de Whispering Claws." data-en="The story follows Elinor Shanks, a reporter returning to her hometown. Her return is the starting point of Whispering Claws.">
+                                        La historia sigue a Elinor Shanks, una reportera que regresa a su pueblo natal. Ese regreso es el punto de partida de Whispering Claws.
+                                    </p>
+                                </section>
+                                <section class="project-story-section">
+                                    <h3 data-es="Mi participación" data-en="My role">Mi participación</h3>
+                                    <ul class="project-role-tags">
+                                        <li data-es="Fundador y CEO" data-en="Founder &amp; CEO">Fundador y CEO</li>
+                                        <li data-es="Líder de proyecto" data-en="Project lead">Líder de proyecto</li>
+                                        <li data-es="Programador" data-en="Programmer">Programador</li>
+                                    </ul>
+                                    <p data-es="Como fundador y CEO de LunaSoft Studios, lidero el proyecto y participo en la programación de la demo." data-en="As the founder and CEO of LunaSoft Studios, I lead the project and contribute to programming the demo.">
+                                        Como fundador y CEO de LunaSoft Studios, lidero el proyecto y participo en la programación de la demo.
+                                    </p>
+                                </section>
+                            </template>
+                        </div>
+                    </article>
+
+                    <article
+                        id="barssaty"
+                        class="catalog-card"
+                        data-category="software"
+                        data-gallery="Images/Barssaty.jpeg"
+                        data-status="completed"
+                    >
+                        <div class="catalog-image">
+                            <img src="Images/Barssaty.jpeg" alt="Barssaty" loading="lazy">
+                        </div>
+                        <div class="catalog-info">
+                            <span class="project-status" data-es="Finalizado" data-en="Completed">
+                                Finalizado
+                            </span>
+                            <p
+                                class="catalog-category"
+                                data-es="Desarrollo web"
+                                data-en="Web development"
+                            >
+                                Desarrollo web
+                            </p>
+                            <h2>Barssaty</h2>
+                            <p
+                                data-es="Sitio web para un emprendimiento de pastelería, orientado a compras y pedidos vinculados con WhatsApp."
+                                data-en="Website for a pastry business, focused on purchases and orders linked to WhatsApp."
+                            >
+                                Sitio web para un emprendimiento de pastelería, orientado a compras y pedidos vinculados con WhatsApp.
+                            </p>
+                            <button class="catalog-open" type="button" data-es="Explorar proyecto" data-en="Explore project">
+                                Explorar proyecto
+                            </button>
+
+                            <template class="project-detail-content">
+                                <h3 data-es="Sobre el proyecto" data-en="About the project">Sobre el proyecto</h3>
+                                <p
+                                    data-es="Sitio web para un emprendimiento de pastelería, orientado a compras y pedidos vinculados con WhatsApp."
+                                    data-en="Website for a pastry business, focused on purchases and orders linked to WhatsApp."
+                                >
+                                    Sitio web para un emprendimiento de pastelería, orientado a compras y pedidos vinculados con WhatsApp.
+                                </p>
+                                <h3 data-es="Estado y disponibilidad" data-en="Status and availability">Estado y disponibilidad</h3>
+                                <p
+                                    data-es="El desarrollo está finalizado. Por decisión del dueño, el sitio todavía no está publicado en internet."
+                                    data-en="Development is complete. At the owner’s request, the website has not been published online yet."
+                                >
+                                    El desarrollo está finalizado. Por decisión del dueño, el sitio todavía no está publicado en internet.
+                                </p>
+                            </template>
+                        </div>
+                    </article>
+
+                    <article
+                        id="calendar"
+                        class="catalog-card"
+                        data-category="software"
+                        data-gallery="Images/Calendar.jpg"
+                        data-status="completed"
+                    >
+                        <div class="catalog-image">
+                            <img src="Images/Calendar.jpg" alt="Calendar · Barssaty" loading="lazy">
+                        </div>
+                        <div class="catalog-info">
+                            <span class="project-status" data-es="Finalizado" data-en="Completed">
+                                Finalizado
+                            </span>
+                            <p
+                                class="catalog-category"
+                                data-es="Software · Aplicación"
+                                data-en="Software · Application"
+                            >
+                                Software · Aplicación
+                            </p>
+                            <h2>Calendar · Barssaty</h2>
+                            <p
+                                data-es="Calendario para organizar pedidos y eventos, con acceso mediante login y almacenamiento en una base de datos externa."
+                                data-en="Calendar for organizing orders and events, with login access and external database storage."
+                            >
+                                Calendario para organizar pedidos y eventos, con acceso mediante login y almacenamiento en una base de datos externa.
+                            </p>
+                            <button class="catalog-open" type="button" data-es="Explorar proyecto" data-en="Explore project">
+                                Explorar proyecto
+                            </button>
+
+                            <template class="project-detail-content">
+                                <h3 data-es="Sobre el proyecto" data-en="About the project">Sobre el proyecto</h3>
+                                <p
+                                    data-es="Calendario para organizar los pedidos y eventos de Barssaty. Incluye acceso mediante login y almacenamiento en una base de datos externa."
+                                    data-en="A calendar for organizing Barssaty orders and events. It includes login access and storage in an external database."
+                                >
+                                    Calendario para organizar los pedidos y eventos de Barssaty. Incluye acceso mediante login y almacenamiento en una base de datos externa.
+                                </p>
+                                <h3 data-es="Estado" data-en="Status">Estado</h3>
+                                <p
+                                    data-es="El desarrollo de la aplicación está finalizado."
+                                    data-en="Application development is complete."
+                                >
+                                    El desarrollo de la aplicación está finalizado.
+                                </p>
+                            </template>
+                        </div>
+                    </article>
+
+                    <article
+                        id="save-a-cat"
+                        class="catalog-card"
+                        data-category="software"
+                        data-gallery="Images/Save_a_cat.jpg"
+                        data-status="idea"
+                    >
+                        <div class="catalog-image">
+                            <img src="Images/Save_a_cat.jpg" alt="Save a Cat" loading="lazy">
+                        </div>
+                        <div class="catalog-info">
+                            <span class="project-status" data-es="Idea" data-en="Idea">
+                                Idea
+                            </span>
+                            <p
+                                class="catalog-category"
+                                data-es="Aplicación · Mobile"
+                                data-en="Application · Mobile"
+                            >
+                                Aplicación · Mobile
+                            </p>
+                            <h2>Save a Cat</h2>
+                            <p
+                                data-es="Proyecto de una red social para el rescate de animales en tiempo real."
+                                data-en="A social network project for real-time animal rescue."
+                            >
+                                Proyecto de una red social para el rescate de animales en tiempo real.
+                            </p>
+                            <button class="catalog-open" type="button" data-es="Explorar proyecto" data-en="Explore project">
+                                Explorar proyecto
+                            </button>
+
+                            <template class="project-detail-content">
+                                <h3 data-es="La idea" data-en="The idea">La idea</h3>
+                                <p
+                                    data-es="Save a Cat es una idea de aplicación para rescatar animales en tiempo real, con una red social para coordinar ayuda."
+                                    data-en="Save a Cat is an app idea for real-time animal rescue, with a social network to coordinate help."
+                                >
+                                    Save a Cat es una idea de aplicación para rescatar animales en tiempo real, con una red social para coordinar ayuda.
+                                </p>
+                                <h3 data-es="Próximo paso" data-en="Next step">Próximo paso</h3>
+                                <p
+                                    data-es="El desarrollo todavía no comenzó. La intención es empezar a trabajar en la idea próximamente."
+                                    data-en="Development has not started yet. The intention is to start working on the idea soon."
+                                >
+                                    El desarrollo todavía no comenzó. La intención es empezar a trabajar en la idea próximamente.
+                                </p>
+                            </template>
+                        </div>
+                    </article>
+
+                    <article
+                        id="2d-game"
+                        class="catalog-card"
+                        data-category="games"
+                        data-status="idea"
+                        data-catalog-hidden="true"
+                        hidden
+                    >
+                        <div class="catalog-image">
+                            <div class="catalog-placeholder" aria-hidden="true">
+                                2D Game
+                            </div>
+                        </div>
+                        <div class="catalog-info">
+                            <span class="project-status" data-es="Idea" data-en="Idea">
+                                Idea
+                            </span>
+                            <p
+                                class="catalog-category"
+                                data-es="Videojuego · Práctica"
+                                data-en="Video game · Practice"
+                            >
+                                Videojuego · Práctica
+                            </p>
+                            <h2>2D Game</h2>
+                            <p
+                                data-es="Idea de práctica de un videojuego 2D a partir de un tutorial; pendiente de retomar."
+                                data-en="A 2D game practice idea based on a tutorial, to be revisited later."
+                            >
+                                Idea de práctica de un videojuego 2D a partir de un tutorial; pendiente de retomar.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2026 Nahuel Inguanta</p>
+        </footer>
+        <dialog id="catalog-project" class="catalog-project" aria-labelledby="catalog-project-title">
+            <button id="catalog-project-close" class="catalog-project-close" type="button" aria-label="Cerrar proyecto">×</button>
+            <div class="catalog-project-layout">
+                <div class="catalog-project-media">
+                    <img id="catalog-project-image" class="catalog-project-image" alt="">
+                    <div id="catalog-project-gallery" class="catalog-project-gallery" role="group" aria-label="Imágenes del proyecto"></div>
+                </div>
+                <div class="catalog-project-copy">
+                    <div class="catalog-project-heading">
+                        <h2 id="catalog-project-title"></h2>
+                        <div id="catalog-project-tags" class="catalog-project-tags"></div>
+                    </div>
+                    <div id="catalog-project-content"></div>
+                </div>
+            </div>
+        </dialog>
+        <script src="/catalog.js">
+        </script>
+    </body>
+</html>

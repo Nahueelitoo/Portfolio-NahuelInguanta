@@ -1,0 +1,7 @@
+# Fondo continuo de luna y silueta
+
+Herramienta: ImageGen integrada. Archivo original: moon-black-cat-v2.png (941 × 1672 píxeles). Se conserva la proporción y se limita el tamaño CSS para evitar ampliarlo por encima de su resolución.
+
+## Prompt
+
+Use case: stylized-concept. Create a new high resolution decorative background asset for a dark developer portfolio, requested resolution 2160x3840 portrait for large desktop monitors. A large softly luminous silver moon in the upper right, fully visible with generous space above it, occupying roughly 60% of the image width. In the lower right, a simple solid black silhouette of a sitting cat in profile, pointed ears and gracefully curled tail. The cat must be ONLY a clean black silhouette with a very subtle soft charcoal rim marking its outer contour: no fur details, no face details, no eyes, no realistic cat photograph. Long continuous subtle charcoal atmospheric haze connects the moon at the top and the silhouette near the bottom across the full height. Minimal elegant monochrome design. Nearly black #0a0a0a background, very dark negative space in the left half. Softly faded edges, clean smooth gradations, moon texture sharp and finely resolved without pixelation, no grain or noisy texture, no stars, no scenery, no text, no watermark. Intended to extend along the right edge of an entire scrollable website content area; keep both subjects contained in the rightmost two thirds.
