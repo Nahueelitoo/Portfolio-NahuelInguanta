@@ -100,6 +100,12 @@ main::before {
     transition: background 180ms ease, border-color 180ms ease;
 }
 .hero-button:hover { background: rgba(255, 255, 255, .12); border-color: #fff; }
+.hero-actions, .hero-profile-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+.hero-actions .hero-button { white-space: nowrap; }
+.hero-socials { display: flex; align-items: center; gap: 8px; }
+.hero-social { display: inline-grid; place-items: center; width: 40px; height: 40px; border: 1px solid var(--lunar-border); border-radius: 6px; background: var(--lunar-surface); color: var(--lunar-accent); transition: background 180ms ease, border-color 180ms ease; }
+.hero-social svg { display: block; width: 21px; height: 21px; }
+.hero-social:hover { background: rgba(198,178,239,.16); border-color: var(--lunar-accent); }
 .nav-links a { transition: color 180ms ease; }
 .nav-links a:hover { color: #c2c2c2; }
 .language-switch { display: flex; align-items: center; gap: 8px; }
